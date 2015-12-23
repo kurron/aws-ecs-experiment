@@ -1,0 +1,29 @@
+{
+    "family": "asgard-hid-generator",
+    "containerDefinitions": [
+        {
+            "name": "asgard-hid-generator",
+            "image": "registry.transparent.com/asgard-hid-generator:1.0.5.RELEASE",
+            "cpu": 0,
+            "memory": 256,
+            "portMappings": [
+                {
+                    "containerPort": 1234,
+                    "hostPort": 1234,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "hostname": "asgard-hid-generator",
+            "dockerLabels": {
+                "release": "1.0.5.RELEASE"
+            },
+            "logConfiguration": {
+                "logDriver": "syslog",
+                "options": {
+                    "tag": "asgard-hid-generator"
+                }
+            }
+        }
+    ]
+}
