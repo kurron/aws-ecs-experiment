@@ -1,19 +1,19 @@
 #Overview
-This project is a simple Docker image that runs the [AWS Command Line Interface](https://aws.amazon.com/cli/). 
-It saves you from having to install the required dependencies just to run the command line.
+This project contains several samples that uses [AWS Command Line Interface](https://aws.amazon.com/cli/)
+to place workloadx into [Amazon EC2 Container Service](https://aws.amazon.com/ecs/).
 
 #Prerequisites
-* a working [Docker](http://docker.io) engine
-* a working [Docker Compose](http://docker.io) installation
+* a working [AWS CLI](https://aws.amazon.com/cli/) evironment or [container](https://github.com/kurron/docker-aws-cli)
+* a working [AWS ECS](https://aws.amazon.com/ecs/) evironment
 
 #Building
-Type `docker-compose build` to build the image.
+These files are simply fed into the AWS CLI so there isn't anything to build.
 
 #Installation
-Docker will automatically install the newly built image into the cache.
+Nothing besides the prerequisites need to be installed. 
 
 ##Environment Variables
-The `aws.sh` script expects 3 variables to be specified in the environment and passes them onto the container:
+The AWS CLIE and wrapping convenience scripts expects 3 variables to be specified in the environment:
 
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
@@ -21,19 +21,10 @@ The `aws.sh` script expects 3 variables to be specified in the environment and p
 
 #Tips and Tricks
 
-##Verifying The Image
-`docker-compose up` will launch the image, verifying the image. The Docker Compose file is 
-configured to mount your home directory into the container.  
-
-##Launching The Image
-Run `./aws.sh` and it will launch the container with the default command line argument of `--version`.  You can 
-feed different arguments to script and execute arbitrary AWS commands, eg. `./aws.sh configure`.
-
+TODO
 #Troubleshooting
 
-##User Account
-The image assumes that the account running the continer will have a user and group id of 1000:1000.  This allows the container 
-to save files in your home directory and keep the proper permissions.
+TODO
 
 #License and Credits
 This project is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/).
