@@ -13,11 +13,12 @@ These files are simply fed into the AWS CLI so there isn't anything to build.
 Nothing besides the prerequisites need to be installed. 
 
 ##Environment Variables
-The AWS CLIE and wrapping convenience scripts expects 3 variables to be specified in the environment:
+The AWS CLI and wrapping convenience scripts expects some variables to be specified in the environment:
 
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 * AWS_REGION
+* AWS_CLUSTER
 
 #Tips and Tricks
 
