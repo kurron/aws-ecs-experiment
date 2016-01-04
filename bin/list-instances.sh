@@ -1,5 +1,5 @@
 #!/bin/bash
 
-CMD="aws ecs list-container-instances --cluster $AWS_CLUSTER"
+CMD="aws ecs list-container-instances --region $AWS_REGION --cluster $AWS_CLUSTER"
 echo $CMD
 $CMD
