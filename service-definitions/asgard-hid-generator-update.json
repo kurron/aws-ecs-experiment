@@ -2,6 +2,6 @@
     "cluster": "al-ecs-cluster",
     "service": "asgard-hid-generator",
     "desiredCount": 3,
-    "taskDefinition": "arn:aws:ecs:us-west-2:711226717742:task-definition/asgard-hid-generator:2"
+    "taskDefinition": "arn:aws:ecs:us-west-2:711226717742:task-definition/asgard-hid-generator:3"
 }
 

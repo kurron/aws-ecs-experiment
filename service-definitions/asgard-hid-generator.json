@@ -1,15 +1,15 @@
 {
     "cluster": "al-ecs-cluster",
     "serviceName": "asgard-hid-generator",
-    "taskDefinition": "arn:aws:ecs:us-west-2:711226717742:task-definition/asgard-hid-generator:2",
+    "taskDefinition": "arn:aws:ecs:us-west-2:711226717742:task-definition/asgard-hid-generator:3",
     "loadBalancers": [
         {
             "loadBalancerName": "auto-scaling-load-balancer",
             "containerName": "asgard-hid-generator",
-            "containerPort": 1234
+            "containerPort": 8080
         }
      ],
     "desiredCount": 3,
-    "clientToken": "a7cdfdeac3ef42e7aea4d6395a9b0036",
+    "clientToken": "b7cdfdeac3ef42e7aea4d6395a9b00379",
     "role": "arn:aws:iam::711226717742:role/ecs-instance-role"
 }

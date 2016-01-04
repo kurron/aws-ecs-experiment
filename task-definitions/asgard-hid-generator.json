@@ -3,12 +3,12 @@
     "containerDefinitions": [
         {
             "name": "asgard-hid-generator",
-            "image": "registry.transparent.com/asgard-hid-generator:1.0.5.RELEASE",
+            "image": "registry.transparent.com/asgard-hid-generator:1.0.7.RELEASE",
             "cpu": 0,
             "memory": 256,
             "portMappings": [
                 {
-                    "containerPort": 1234,
+                    "containerPort": 8080,
                     "hostPort": 1234,
                     "protocol": "tcp"
                 }
@@ -16,7 +16,7 @@
             "essential": true,
             "hostname": "asgard-hid-generator",
             "dockerLabels": {
-                "release": "1.0.5.RELEASE"
+                "release": "1.0.7.RELEASE"
             },
             "logConfiguration": {
                 "logDriver": "syslog",
